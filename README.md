@@ -1,5 +1,7 @@
 # [Bootstrap 3 arabic](http://zerox.me/projects/bootstrap3) [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.png)](http://travis-ci.org/twbs/bootstrap) [![devDependency Status](https://david-dm.org/twbs/bootstrap/dev-status.png)](https://david-dm.org/twbs/bootstrap#info=devDependencies)
 
+RTLed using [bi-app-less](https://github.com/anasnakawa/bi-app-less)
+
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).
 
 To get started, check out [http://zerox.me/projects/bootstrap3](http://zerox.me/projects/bootstrap3)!
