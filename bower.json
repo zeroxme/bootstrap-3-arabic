@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "bootstrap arabic",
   "version": "3.0.0",
   "main": ["./dist/js/bootstrap.js", "./dist/css/bootstrap.css", "./dist/fonts/*"],
   "ignore": [

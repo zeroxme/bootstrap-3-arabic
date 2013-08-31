@@ -30,6 +30,18 @@
 @body-bg:               #fff;
 @text-color:            @gray-dark;
 
+
+// Bi App
+// -------------------------
+
+// ltr or rtl
+@text-direction:        rtl;
+
+@bi-app-left            : ~`"@{text-direction}" === 'ltr' ? 'left'  : 'right'`;
+@bi-app-right           : ~`"@{text-direction}" === 'ltr' ? 'right' : 'left'`;
+@bi-app-direction       : @text-direction;
+@bi-app-invert-direction: ~`"@{text-direction}" === 'ltr' ? 'rtl' : 'ltr'`;
+
 // Links
 // -------------------------
 
@@ -38,8 +50,31 @@
 
 // Typography
 // -------------------------
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    src: url('../fonts/DroidKufi-Regular.eot');
+    src: url('../fonts/DroidKufi-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidKufi-Regular.woff') format('woff'),
+         url('../fonts/DroidKufi-Regular.woff2') format('woff2'),
+         url('../fonts/DroidKufi-Regular.ttf') format('truetype'),
+         url('../fonts/DroidKufi-Regular.svg#Droid Arabic Kufi') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-face {
+    font-family: 'Droid Arabic Kufi';
+    src: url('../fonts/DroidKufi-Bold.eot');
+    src: url('../fonts/DroidKufi-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidKufi-Bold.woff') format('woff'),
+         url('../fonts/DroidKufi-Bold.woff2') format('woff2'),
+         url('../fonts/DroidKufi-Bold.ttf') format('truetype'),
+         url('../fonts/DroidKufi-Bold.svg#Droid Arabic Kufi') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-family-sans-serif:  'Droid Arabic Kufi', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -59,7 +94,7 @@
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
 @headings-font-family:    @font-family-base;
-@headings-font-weight:    500;
+@headings-font-weight:    400;
 @headings-line-height:    1.1;
 
 // Iconography
@@ -111,7 +146,7 @@
 // Buttons
 // -------------------------
 
-@btn-font-weight:                normal;
+@btn-font-weight:                400;
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
@@ -448,7 +483,7 @@
 // -------------------------
 @alert-padding:               15px;
 @alert-border-radius:         @border-radius-base;
-@alert-link-font-weight:      bold;
+@alert-link-font-weight:      700;
 
 @alert-success-bg:            @state-success-bg;
 @alert-success-text:          @state-success-text;
@@ -551,7 +586,7 @@
 @badge-active-color:          @link-color;
 @badge-active-bg:             #fff;
 
-@badge-font-weight:           bold;
+@badge-font-weight:           700;
 @badge-line-height:           1;
 @badge-border-radius:         10px;
 
@@ -582,7 +617,7 @@
 // Close
 // ------------------------
 @close-color:                 #000;
-@close-font-weight:           bold;
+@close-font-weight:           700;
 @close-text-shadow:           0 1px 0 #fff;
 
 

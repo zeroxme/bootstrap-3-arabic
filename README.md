@@ -1,8 +1,8 @@
-# [Bootstrap](http://getbootstrap.com) [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.png)](http://travis-ci.org/twbs/bootstrap) [![devDependency Status](https://david-dm.org/twbs/bootstrap/dev-status.png)](https://david-dm.org/twbs/bootstrap#info=devDependencies)
+# [Bootstrap 3 arabic](http://zerox.me/projects/bootstrap3) [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.png)](http://travis-ci.org/twbs/bootstrap) [![devDependency Status](https://david-dm.org/twbs/bootstrap/dev-status.png)](https://david-dm.org/twbs/bootstrap#info=devDependencies)
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).
 
-To get started, check out [http://getbootstrap.com](http://getbootstrap.com)!
+To get started, check out [http://zerox.me/projects/bootstrap3](http://zerox.me/projects/bootstrap3)!
 
 
 
@@ -14,7 +14,7 @@ Three quick start options are available:
 * Clone the repo: `git clone git://github.com/twbs/bootstrap.git`.
 * Install with [Bower](http://bower.io): `bower install bootstrap`.
 
-Read the [Getting Started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
+Read the [Getting Started page](http://zerox.me/projects/bootstrap3/getting-started/) for information on the framework contents, templates and examples, and more.
 
 
 
@@ -28,7 +28,7 @@ You may use [this JS Bin](http://jsbin.com/aKiCIDO/1/edit) as a template for you
 
 ## Documentation
 
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at [http://getbootstrap.com](http://getbootstrap.com). The docs may also be run locally.
+Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at [http://zerox.me/projects/bootstrap3](http://zerox.me/projects/bootstrap3). The docs may also be run locally.
 
 ### Running documentation locally
 
