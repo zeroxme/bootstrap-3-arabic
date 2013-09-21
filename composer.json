@@ -11,11 +11,11 @@
       {
         "name": "Jacob Thornton",
         "email": "jacobthornton@gmail.com"
-      }
-      {
-        "name": "ize0x",
-        "email": "zerothedesigner@gmail.com"
       },
+      {
+        "name": "zero",
+        "email": "zerothedesigner@gmail.com"
+      }
     ]
   , "support": {
       "issues": "https://github.com/izer0x/bootstrap-3-arabic/issues"
