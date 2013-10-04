@@ -1,4 +1,4 @@
-# [Bootstrap 3 arabic](http://zerox.me/projects/bootstrap3) [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.png)](http://travis-ci.org/twbs/bootstrap) [![devDependency Status](https://david-dm.org/twbs/bootstrap/dev-status.png)](https://david-dm.org/twbs/bootstrap#info=devDependencies)
+# [Bootstrap 3 arabic](http://zerox.me/projects/bootstrap3) [![Build Status](https://secure.travis-ci.org/twbs/bootstrap.png)](http://travis-ci.org/twbs/bootstrap) [![devDependency Status](https://david-dm.org/izer0x/bootstrap-3-arabic/dev-status.png)](https://david-dm.org/izer0x/bootstrap-3-arabic#info=devDependencies)
 
 RTLed using [bi-app-less](https://github.com/anasnakawa/bi-app-less)
 
@@ -17,6 +17,29 @@ Three quick start options are available:
 * Install with [Bower](http://bower.io): `bower install bootstrap`.
 
 Read the [Getting Started page](http://zerox.me/projects/bootstrap3/getting-started/) for information on the framework contents, templates and examples, and more.
+
+### What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    └── glyphicons-halflings-regular.woff
+```
+
+We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). Fonts from Glyphicons are included, as is the optional Bootstrap theme.
 
 
 
@@ -58,7 +81,7 @@ Bootstrap uses [Grunt](http://gruntjs.com/) with convenient methods for working 
 From the command line:
 
 1. Install `grunt-cli` globally with `npm install -g grunt-cli`.
-2. Install the [necessary local dependencies](package.json) via `npm install`
+2. Navigate to the root `/bootstrap` directory, then run `npm install`. npm will look at [package.json](package.json) and automatically install the necessary local dependencies listed there.
 
 When completed, you'll be able to run the various Grunt commands provided from the command line.
 
