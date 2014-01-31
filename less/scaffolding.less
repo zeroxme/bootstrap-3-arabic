@@ -4,8 +4,13 @@
 
 
 // Reset the box-sizing
-
-*,
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+  .box-sizing(border-box);
+}
 *:before,
 *:after {
   .box-sizing(border-box);
@@ -25,7 +30,6 @@ body {
   line-height: @line-height-base;
   color: @text-color;
   background-color: @body-bg;
-  direction: @text-direction;
 }
 
 // Reset fonts for relevant elements
@@ -115,6 +119,6 @@ hr {
   margin: -1px;
   padding: 0;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0,0,0,0);
   border: 0;
 }
