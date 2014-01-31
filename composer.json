@@ -1,24 +1,29 @@
 {
-    "name": "bootstrap 3 arabic"
-  , "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development."
-  , "keywords": ["bootstrap", "css"]
-  , "homepage": "http://zerox.me/projects/bootstrap3/"
-  , "authors": [
-      {
-        "name": "Mark Otto",
-        "email": "markdotto@gmail.com"
-      },
-      {
-        "name": "Jacob Thornton",
-        "email": "jacobthornton@gmail.com"
-      },
-      {
-        "name": "zero",
-        "email": "zerothedesigner@gmail.com"
-      }
-    ]
-  , "support": {
-      "issues": "https://github.com/izer0x/bootstrap-3-arabic/issues"
+  "name": "bootstrap-3-arabic",
+  "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+  "keywords": ["bootstrap", "css", "rtl"],
+  "homepage": "http://zerox.me/projects/bootstrap3/",
+  "authors": [
+    {
+      "name": "Mark Otto",
+      "email": "markdotto@gmail.com"
+    },
+    {
+      "name": "Jacob Thornton",
+      "email": "jacobthornton@gmail.com"
+    },
+    {
+      "name": "zero",
+      "email": "zerothedesigner@gmail.com"
     }
-  , "license": "Apache-2.0"
+  ],
+  "support": {
+    "issues": "https://github.com/izer0x/bootstrap-3-arabic/issues"
+  },
+  "license": "MIT",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0.x-dev"
+    }
+  }
 }
