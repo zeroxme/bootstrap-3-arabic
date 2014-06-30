@@ -1,8 +1,19 @@
 {
   "name": "izer0x/bootstrap-3-arabic",
-  "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
-  "keywords": ["bootstrap", "css", "rtl"],
-  "homepage": "http://zerox.me/projects/bootstrap3/",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "rtl"
+    "js",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://zerox.me/projects/bootstrap3",
   "authors": [
     {
       "name": "Mark Otto",
@@ -23,7 +34,10 @@
   "license": "MIT",
   "extra": {
     "branch-alias": {
-      "dev-master": "3.0.x-dev"
+      "dev-master": "3.2.x-dev"
     }
+  },
+  "replace": {
+    "twitter/bootstrap": "self.version"
   }
 }
