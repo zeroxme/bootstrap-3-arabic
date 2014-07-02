@@ -169,19 +169,24 @@ license your work under the terms of the [MIT License](LICENSE.md).
 - Always a space after a property's colon (e.g., `display: block;` and not `display:block;`).
 - End all lines with a semi-colon.
 - For multiple, comma-separated selectors, place each selector on its own line.
+- Don't add vendor prefixed properties to their unprefixed counterparts (e.g., only `box-sizing` and not also include `-webkit-box-sizing`), as this is done automagically at build time.
 - Attribute selectors, like `input[type="text"]` should always wrap the attribute's value in double quotes, for consistency and safety (see this [blog post on unquoted attribute values](http://mathiasbynens.be/notes/unquoted-attribute-values) that can lead to XSS attacks).
 - Attribute selectors should only be used where absolutely necessary (e.g., form controls) and should be avoided on custom components for performance and explicitness.
 - Series of classes for a component should include a base class (e.g., `.component`) and use the base class as a prefix for modifier and sub-components (e.g., `.component-lg`).
 - Avoid inheritance and over nesting—use single, explicit classes whenever possible.
 - When feasible, default color palettes should comply with [WCAG color contrast guidelines](http://www.w3.org/TR/WCAG20/#visual-audio-contrast).
+- Except in rare cases, don't remove default `:focus` styles (via e.g. `outline: none;`) without providing alternative styles. See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines/) for more details.
 
 ### JS
 
-- No semicolons
-- Comma first
+- No semicolons (in client-side JS)
 - 2 spaces (no tabs)
 - strict mode
 - "Attractive"
+
+### Checking coding style
+
+Run `grunt test` before committing to ensure your changes follow our coding standards.
 
 
 ## License
