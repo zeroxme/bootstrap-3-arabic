@@ -3,7 +3,8 @@ layout: home
 title: بوتستراب
 ---
 
-<main class="bs-docs-masthead" id="content" role="main">
+
+<main class="bs-docs-masthead" id="content" role="main" tabindex="-1">
   <div class="container">
     <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">ب</span>
     <p class="lead">بوتستراب ٣ بالعربي بس مشخلع</p>
@@ -11,7 +12,6 @@ title: بوتستراب
       <a href="getting-started#download" class="btn btn-outline-inverse btn-lg" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download Bootstrap</a>
     </p>
     <p class="version">Currently v{{ site.current_version }}</p>
-    {% include ads.html %}
   </div>
 </main>
 
@@ -26,7 +26,7 @@ title: بوتستراب
       <div class="col-sm-4">
         <img src="assets/img/sass-less.png" alt="Sass and Less support" class="img-responsive">
         <h3>Preprocessors</h3>
-        <p>Bootstrap ships with vanilla CSS, but it's source code utilizes the two most popular CSS preprocessors, <a href="../css/#less">Less</a> and <a href="../css/#sass">Sass</a>. Quickly get started with precompiled CSS or build on the source.</p>
+        <p>Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, <a href="../css/#less">Less</a> and <a href="../css/#sass">Sass</a>. Quickly get started with precompiled CSS or build on the source.</p>
       </div>
       <div class="col-sm-4">
         <img src="assets/img/devices.png" alt="Responsive across devices" class="img-responsive">
@@ -56,9 +56,9 @@ title: بوتستراب
 
     <div class="row bs-docs-featured-sites">
     {% for showcase in site.data.showcase %}
-      <div class="col-sm-3">
+      <div class="col-xs-6 col-sm-3">
         <a href="{{ showcase.expo_url }}" target="_blank" title="{{ showcase.name }}">
-          <img src="http://expo.getbootstrap.com/screenshots/{{ showcase.img }}.jpg" alt="{{ showcase.name }}" class="img-responsive">
+          <img src="{{ site.baseurl }}/assets/img/expo-{{ showcase.img }}.jpg" alt="{{ showcase.name }}" class="img-responsive">
         </a>
       </div>
     {% endfor %}

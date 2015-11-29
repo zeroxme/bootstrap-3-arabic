@@ -5,25 +5,44 @@ slug: customize
 lead: قم بتعديل بوتستراب حسب احتياجاتك.
 ---
 
+
 <!-- less.js isn't IE8-compatible and throws an exception during initialization, so our Blob compatibility check and error messaging code never get called in that case.
   So we use a conditional comment instead to inform folks about the lack of IE8 support.
-  The alert covers up the entire customizer UI.
 -->
 <!--[if lt IE 9]>
   <style>
     .bs-customizer,
+    .bs-customizer-import,
     .bs-docs-sidebar {
       display: none;
     }
   </style>
-  <div class="alert alert-danger bs-customizer-alert-ie">
+  <div class="alert alert-danger">
     <strong>The Bootstrap Customizer does not support IE9 and below.</strong><br>
     Please take a second to <a href="http://browsehappy.com/">upgrade to a more modern browser</a>.
   </div>
 <![endif]-->
 
 <!-- Customizer form -->
-<form class="bs-customizer" role="form">
+
+<div id="defaults-change-alert" class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Heads up!</strong> The default value for <code>@brand-primary</code> has changed in the latest release to improve contrast and accessibility. Please double check your compiled CSS when upgrading.
+</div>
+
+<div class="bs-docs-section bs-customizer-import">
+  <div id="import-drop-target" class="bs-dropzone">
+    <div class="import-header">
+      <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
+    </div>
+    <p class="lead">Have an existing configuration? Upload your <code>config.json</code> to import it.</p>
+    <p>Drag and drop here, or <label id="import-manual-trigger" class="btn-link">manually upload<input type="file" id="import-file-select" class="hidden"></label>.</p>
+    <hr>
+    <p><strong>Don't have one?</strong> That's okay—just start customizing the fields below.</p>
+  </div>
+</div>
+
+<form class="bs-customizer">
   <div class="bs-docs-section" id="less-section">
     <button class="btn btn-default toggle" type="button">Toggle all</button>
     <h1 id="less" class="page-header">Less files</h1>
@@ -212,31 +231,32 @@ lead: قم بتعديل بوتستراب حسب احتياجاتك.
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="component-animations.less">
-            Component animations (for JS)
+            Component animations (for JS)<br>
+            (includes Collapse)
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="dropdowns.less">
-            Dropdowns
+            Dropdown
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="tooltip.less">
-            Tooltips
+            Tooltip
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="popovers.less">
-            Popovers
+            Popover
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="modals.less">
-            Modals
+            Modal
           </label>
         </div>
         <div class="checkbox">
@@ -248,8 +268,6 @@ lead: قم بتعديل بوتستراب حسب احتياجاتك.
       </div><!-- .col-xs-6 .col-sm-4 -->
     </div><!-- /.row -->
   </div>
-
-
 
   <div class="bs-docs-section" id="plugin-section">
     <button class="btn btn-default toggle" type="button">Toggle all</button>
@@ -348,8 +366,6 @@ lead: قم بتعديل بوتستراب حسب احتياجاتك.
     </div>
   </div>
 
-
-
   <div class="bs-docs-section" id="less-variables-section">
     <button class="btn btn-default toggle" type="button">Reset to defaults</button>
     <h1 id="less-variables" class="page-header">Less variables</h1>
@@ -357,8 +373,6 @@ lead: قم بتعديل بوتستراب حسب احتياجاتك.
     <p class="lead">Customize Less variables to define colors, sizes and more inside your custom CSS stylesheets.</p>
     {% include customizer-variables.html %}
   </div>
-
-
 
   <div class="bs-docs-section">
     <h1 id="download" class="page-header">Download</h1>
